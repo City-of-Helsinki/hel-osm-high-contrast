@@ -1,26 +1,26 @@
 {
-    "pedestrian-8": {
+    "pedestrian_8": {
         "width": 8,
         "height": 8,
         "x": 0,
         "y": 0,
         "pixelRatio": 1
     },
-    "wood-32": {
+    "wood_32": {
         "width": 32,
         "height": 32,
         "x": 8,
         "y": 0,
         "pixelRatio": 1
     },
-    "grass-32": {
+    "grass_32": {
         "width": 32,
         "height": 32,
         "x": 40,
         "y": 0,
         "pixelRatio": 1
     },
-    "circle-8": {
+    "circle_8": {
         "width": 8,
         "height": 8,
         "x": 72,
