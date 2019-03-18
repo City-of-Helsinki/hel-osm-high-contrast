@@ -1,0 +1,30 @@
+{
+    "pedestrian-16": {
+        "width": 16,
+        "height": 16,
+        "x": 0,
+        "y": 0,
+        "pixelRatio": 2
+    },
+    "wood-64": {
+        "width": 64,
+        "height": 64,
+        "x": 16,
+        "y": 0,
+        "pixelRatio": 2
+    },
+    "grass-64": {
+        "width": 64,
+        "height": 64,
+        "x": 80,
+        "y": 0,
+        "pixelRatio": 2
+    },
+    "circle-16": {
+        "width": 16,
+        "height": 16,
+        "x": 144,
+        "y": 0,
+        "pixelRatio": 2
+    }
+}
