@@ -1,29 +1,29 @@
 {
-    "pedestrian_8": {
-        "width": 8,
-        "height": 8,
+    "pedestrian_4": {
+        "width": 4,
+        "height": 4,
         "x": 0,
         "y": 0,
         "pixelRatio": 1
     },
-    "wood_32": {
-        "width": 32,
-        "height": 32,
-        "x": 8,
+    "wood_16": {
+        "width": 16,
+        "height": 16,
+        "x": 4,
         "y": 0,
         "pixelRatio": 1
     },
-    "grass_32": {
-        "width": 32,
-        "height": 32,
-        "x": 40,
+    "grass_16": {
+        "width": 16,
+        "height": 16,
+        "x": 20,
         "y": 0,
         "pixelRatio": 1
     },
-    "circle_8": {
-        "width": 8,
-        "height": 8,
-        "x": 72,
+    "circle_4": {
+        "width": 4,
+        "height": 4,
+        "x": 36,
         "y": 0,
         "pixelRatio": 1
     }
