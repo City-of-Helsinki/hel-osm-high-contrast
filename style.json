@@ -2992,10 +2992,10 @@
               0
             ],
             [
-                0,
-                -9
-              ]
+              16,
+              1
             ]
+          ]
         },
         "fill-extrusion-base": 0,
         "fill-extrusion-translate-anchor": "map"
