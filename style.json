@@ -2911,7 +2911,7 @@
       }
     },
     {
-      "id": "building",
+      "id": "building-flat",
       "type": "fill",
       "metadata": {
         "mapbox:group": "1444849364238.8171"
@@ -2933,6 +2933,10 @@
             [
               15,
               "#444455"
+            ],
+            [
+              16,
+              "rgba(45, 45, 60, 1)"
             ]
           ]
         },
@@ -2952,8 +2956,8 @@
       }
     },
     {
-      "id": "building-top",
-      "type": "fill",
+      "id": "building-extruded",
+      "type": "fill-extrusion",
       "metadata": {
         "mapbox:group": "1444849364238.8171"
       },
@@ -2964,29 +2968,37 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "rgba(88, 88, 109, 1)",
-        "fill-opacity": 1,
-        "fill-outline-color": "rgba(0, 0, 0, 1)",
-        "fill-translate": {
-          "base": 1,
+        "fill-extrusion-color": "rgba(88, 88, 109, 1)",
+        "fill-extrusion-height": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          15,
+          2,
+          17,
+          [
+            "get",
+            "render_height"
+          ]
+        ],
+        "fill-extrusion-opacity": {
           "stops": [
             [
               15,
-              [
-                0,
-                0
-              ]
+              0
             ],
             [
-              18,
-              [
                 0,
                 -9
               ]
             ]
-          ]
         },
-        "fill-antialias": true
+        "fill-extrusion-base": 0,
+        "fill-extrusion-translate-anchor": "map"
       }
     },
     {
@@ -4837,12 +4849,65 @@
           "protected_area",
           "prison",
           "lodging",
-          "art_gallery"
+          "art_gallery",
+          "hospital",
+          "stadium",
+          "pitch",
+          "playground"
         ],
         [
-          "!=",
+          "!in",
           "subclass",
-          "artwork"
+          "artwork",
+          "books",
+          "clinic"
+        ]
+      ],
+      "layout": {
+        "icon-image": "",
+        "text-anchor": "top",
+        "text-field": "{name:latin}",
+        "text-font": [
+          "Lato Italic"
+        ],
+        "text-max-width": 9,
+        "text-offset": [
+          0,
+          0
+        ],
+        "text-padding": 2,
+        "text-size": 15,
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": "rgba(0, 0, 0, 1)",
+        "text-halo-blur": 0,
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 4
+      }
+    },
+    {
+      "id": "poi-mall",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "poi",
+      "minzoom": 15,
+      "filter": [
+        "all",
+        [
+          "==",
+          "$type",
+          "Point"
+        ],
+        [
+          "in",
+          "class",
+          "shop"
+        ],
+        [
+          "in",
+          "subclass",
+          "mall"
         ]
       ],
       "layout": {
