@@ -9,7 +9,7 @@ Mapbox style
 ------------
 
 For vector tile rendering of [OpenMapTiles][] imported OSM data, a [Mapbox Style][] re-enactment of the
-original design is now included as `style.json` (Finnish) and `style_sv.json` (Swedish). It can be opened
+original design is now included as `style.json`. It can be opened
 and edited with [Maputnik][].
 
 [OpenMapTiles]: https://github.com/openmaptiles/openmaptiles
@@ -19,7 +19,10 @@ and edited with [Maputnik][].
 [MapBox GL JS]: https://openmaptiles.org/docs/website/mapbox-gl-js/
 
 To use the style on a server, just follow [OpenMapTiles][] and [Tileserver GL][] instructions. To use the
-style on a web client, you may use [MapBox GL JS][] or any other JS library that supports Mapbox styles.
+style on a web client, you may use [MapBox GL JS][] or any other JS library that supports Mapbox styles. 
+For server-side rendering in multiple languages (e.g. Swedish), we suggest the City of Helsinki
+[Tileserver GL fork](https://github.com/City-of-Helsinki/tileserver-gl) that supports specifying the
+language in the tile URL.
 
 MapBox port by Riku Oja.
 
